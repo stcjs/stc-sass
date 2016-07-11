@@ -45,4 +45,10 @@ export default class SassPlugin extends Plugin {
   static cache(){
     return true;
   }
+  /**
+   * set default include file
+   */
+   static include() {
+     return /\.scss$/;
+   }
 }
