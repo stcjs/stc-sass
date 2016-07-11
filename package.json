@@ -1,6 +1,6 @@
 {
   "name": "stc-sass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "SASS Transpile For STCJS",
   "main": "lib/index.js",
   "scripts": {
