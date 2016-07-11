@@ -1,6 +1,5 @@
 import Plugin from 'stc-plugin';
-import {promisify} from 'thinkit';
-import {extend} from 'stc-helper';
+import {extend, promisify} from 'stc-helper';
 
 let sass;
 
@@ -21,7 +20,7 @@ export default class SassPlugin extends Plugin {
     try {
       content = await sass.render(option);
     } catch(e) {
-      throw new Error(`[${e.status}] ${this.file.path} ${e.line}:${e.column} ${e.message}`);
+      this.fatal(`[${e.status}] ${e.message}`, e.line, e.column);
     }
 
     return {content: content.css.toString()};

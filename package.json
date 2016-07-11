@@ -29,8 +29,7 @@
   "dependencies": {
     "node-sass": "^3.8.0",
     "stc-helper": "^1.0.0",
-    "stc-plugin": "^1.0.1",
-    "thinkit": "^4.9.0"
+    "stc-plugin": "^1.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
